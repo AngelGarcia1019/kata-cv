@@ -132,12 +132,21 @@
   margin: 20px;
   padding: 10px;
   box-shadow: 0 0 0.4em black;
+  height: auto;
 }
 
-.experience-item{
+.experience-item {
   display: flex;
+  flex-direction: column;
+
   background-color: aqua;
-  
+}
+
+.experience-item > h1 {
+  background-color: green;
+}
+.experience-item > p {
+  background-color: red;
 }
 
 #education {
