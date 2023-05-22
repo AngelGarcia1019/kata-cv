@@ -29,8 +29,8 @@
 }
 
 .btn_nav:hover {
-  color: white;
-  background-color: rgba(0, 0, 255, 0.712);
+  color: black;
+  background-color: rgba(250, 250, 250, 0.952);
 }
 
 #about {
@@ -44,7 +44,6 @@
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 0px 0.4em black;
-  /* background-color: rgb(140, 255, 0); */
 }
 
 .info {
@@ -54,18 +53,7 @@
   padding: 10px;
   color: white;
   box-shadow: 0 0 0.3em #05060f;
-  /* background-color: red; */
   margin: 20px;
-}
-
-/* .info:hover{
-    filter: drop-shadow(0 0 0.25rem rgb(102, 6, 255));
-} */
-
-.atrr-item {
-  display: flex;
-  align-items: center;
-  gap: 4px;
 }
 
 .info > h2 {
@@ -75,26 +63,24 @@
 }
 
 .info > p {
+  font-weight: 600;
+  font-family: monospace;
   text-align: center;
 }
 
 .profile-description-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
   margin: 20px;
   border-radius: 20px;
-  background-color: rgb(160, 27, 27);
+  box-shadow: 0 0 0.4em black;
+  background-color: rgba(250, 250, 250, 0.952);
 }
 
 .profile-description {
-  height: 50%;
-  width: 50%;
+  width: 100%;
   margin: 20px;
   padding: 10px;
-  background-color: rgb(160, 27, 27);
-  box-shadow: 0 0 0.4em black;
 }
 
 .profile-description > p {
@@ -105,8 +91,8 @@
 }
 
 .subtitle {
-  font-family: serif;
   font-size: 30px;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 .image-profile {
@@ -121,43 +107,29 @@
 }
 
 #skills {
-  background-color: blue;
+  background-color: rgba(250, 250, 250, 0.952);
   margin: 20px;
   padding: 10px;
   box-shadow: 0 0 0.4em black;
 }
 
 #experience {
-  background-color: blue;
+  background-color: rgba(250, 250, 250, 0.952);
   margin: 20px;
   padding: 10px;
   box-shadow: 0 0 0.4em black;
   height: auto;
 }
 
-.experience-item {
-  display: flex;
-  flex-direction: column;
-
-  background-color: aqua;
-}
-
-.experience-item > h1 {
-  background-color: green;
-}
-.experience-item > p {
-  background-color: red;
-}
-
 #education {
-  background-color: red;
+  background-color: rgba(250, 250, 250, 0.952);
   margin: 20px;
   padding: 10px;
   box-shadow: 0 0 0.4em black;
 }
 
 #hobbies {
-  background-color: red;
+  background-color: rgba(250, 250, 250, 0.952);
   margin: 20px;
   padding: 10px;
   box-shadow: 0 0 0.4em black;
@@ -192,14 +164,15 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100px;
+  align-items: center;
 }
 
-.footer > p {
+.footer > * {
   font-family: monospace;
-  font-size: 30px;
-  padding-right: 10px;
+  font-size: 10px;
+  margin: 5px 0;
 }
 
 .card_redes_sociales {
@@ -284,4 +257,43 @@
 
 .facebook:hover svg {
   fill: #3b5998;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: monospace;
+  margin: 10px 0;
+}
+
+.info-item-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.info-item-date {
+  font-size: 12px;
+  margin: 5px 0;
+  opacity: 0.75;
+}
+
+.info-item-info {
+  padding-top: 0px;
+  font-size: 14px;
+  margin: 0 0;
+}
+
+.info-item-description {
+  padding-top: 0px;
+  font-size: 10px;
+  margin: 0 0;
+  text-align: justify;
 }
