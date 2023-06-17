@@ -106,11 +106,15 @@
   list-style: none;
 }
 
-#skills {
+#skills-container {
   background-color: rgba(250, 250, 250, 0.952);
   margin: 20px;
   padding: 10px;
   box-shadow: 0 0 0.4em black;
+}
+
+.skills {
+  list-style: url("assets/start.svg");
 }
 
 #experience {
@@ -143,10 +147,6 @@
   display: flex;
   justify-content: center;
   padding: 10px;
-}
-
-.item-list-skill {
-  list-style: url("assets/start.svg");
 }
 
 .card_contacto {
